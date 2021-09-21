@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+    name: webserver
+spec:
+  containers:
+  - name: webserver
+    image: josethz00/k8s-quickstart
+    #resources:
+      #limits:
+        #memory: "128Mi"
+        #cpu: "500m"
+    ports:
+      - containerPort: 8080

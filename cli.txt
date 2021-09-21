@@ -1,0 +1,7 @@
+1. docker build -t josethz00/k8s-quickstart . // builda a imagem do container
+2. docker run --rm -p 8080:8080 josethz00/k8s-quickstart // executa o container buildado
+3. docker push josethz00/k8s-quickstart // publica a imagem no docker hub
+4. kubectl apply -f k8s/pod.yaml // cria o pod
+5. kubectl get pods0 // verifica se o pod foi criado, listando todos
+6. kubectl port-forward pod/webserver 8080:8080 // redireciona o pod para a porta externa 8080 do host
+7. kubectl apply -f k8s/replicaset.yaml // cria o replica set
